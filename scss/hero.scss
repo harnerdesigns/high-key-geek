@@ -32,6 +32,20 @@
 
     .hero {
         &__content {
+
+            .newsletter-form{
+                margin-top: 1rem;
+                @include breakpoint(laptop) {
+                    margin-right: 0;
+                }
+
+                .newsletter-form__button{
+                    width: 10ch;
+                    background: var(--teal);
+                    font-weight: 900;
+                    color: #fff;
+                }
+            }
         }
 
         &__heading {

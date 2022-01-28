@@ -24,6 +24,16 @@
     @media (max-width: 37.5rem) {
       .hero-section .hero__logo-wrapper {
         order: -1; } }
+  .hero-section .hero__content .newsletter-form {
+    margin-top: 1rem; }
+    @media (min-width: 64rem) {
+      .hero-section .hero__content .newsletter-form {
+        margin-right: 0; } }
+    .hero-section .hero__content .newsletter-form .newsletter-form__button {
+      width: 10ch;
+      background: var(--teal);
+      font-weight: 900;
+      color: #fff; }
   .hero-section .hero__heading {
     font-weight: 900;
     text-align: center;

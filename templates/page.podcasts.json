@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "main": {
+      "type": "podcasts-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "newsletter": {"type": "newsletter",
+      "blocks": {
+        "16434000324cd6f9bd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up for cool content!"
+          }
+        },
+        "16434000324cd6f9bd-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "16434000324cd6f9bd-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16434000324cd6f9bd-0",
+        "16434000324cd6f9bd-1",
+        "16434000324cd6f9bd-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }}
+  },
+  "order": [
+    "main",
+    "newsletter"
+  ]
+}

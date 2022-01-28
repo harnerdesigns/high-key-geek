@@ -65,3 +65,136 @@
         text-align: left;
     }
 }
+
+.podcasts-page {
+    .podcast-page-title {
+        text-align: center;
+        margin: 0;
+        font-weight: 900;
+        background: var(--tan) url("./wave--blue.svg") bottom center no-repeat;
+        padding: 5vh 1rem 7vh;
+        background-size: 100vw 5vh;
+        @include breakpoint(laptop) {
+            background-size: 100vw 10vh;
+            font-size: 10rem;
+            padding: 5vh 1rem 10vh;
+            margin-bottom: -5vh;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    .podcast-block {
+        min-height: 40vh;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint(laptop) {
+            grid-template-columns: 2fr 3fr;
+            padding: 5vh 15vw;
+            grid-gap: 4rem;
+        }
+
+        .podcast-logo {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        .podcast-title {
+            font-size: 3rem;
+            margin: 0 0 1rem;
+            font-weight: 900;
+            color: inherit;
+            @include breakpoint(laptop) {
+                font-size: 5rem;
+            }
+        }
+
+        .podcast-description {
+            font-size: 1.25em;
+            @include breakpoint(laptop) {
+                font-size: 1.5em;
+            }
+            a {
+                color: inherit;
+                font-weight: 900;
+                text-decoration: none;
+            }
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+
+            @include breakpoint(laptop) {
+                grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+            }
+            .button {
+                color: #fff;
+                --buttons-border-width: 0;
+                padding: 1rem;
+                font-size: 2rem;
+                font-weight: 900;
+
+                svg {
+                    width: 3rem;
+                    margin-right: 1rem;
+                }
+                &--spotify {
+                    border-color: #1ed760;
+                    background: #1ed760;
+                }
+                &--apple {
+                    background: #131313;
+                    border-color: #131313;
+                }
+            }
+        }
+
+        &:nth-of-type(even) {
+            
+            @include breakpoint(laptop) {
+                grid-template-columns: 3fr 2fr;
+                .podcast-logo {
+                    order: 2;
+                }
+                .podcast-description,
+                .podcast-title {
+                    text-align: right;
+                }
+                
+            }
+
+        }
+
+        &#ConversationalCommerce {
+            background: #232347 url("./wave--white.svg") bottom center no-repeat;
+            padding: 2vh 5vw;
+            background-size: 100vw 5vh;
+            @include breakpoint(laptop) {
+                background-size: 100vw 10vh;
+                padding: 5vh 15vw 10vh;
+                margin-bottom: -5vh;
+            }
+
+            .podcast-meta {
+                color: #fff;
+            }
+        }
+        &#OtherOne {
+            background: transparent url("./wave--purple.svg") bottom center no-repeat;
+            padding: 5vh 15vw;
+            background-size: 100vw 5vh;
+            @include breakpoint(laptop) {
+                background-size: 100vw 10vh;
+                padding: 5vh 15vw 10vh;
+            }
+            text-align: center;
+        }
+    }
+}
