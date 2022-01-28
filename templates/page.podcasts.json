@@ -3,11 +3,10 @@
     "main": {
       "type": "podcasts-page",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
       }
     },
-    "newsletter": {"type": "newsletter",
+    "newsletter": {
+      "type": "newsletter",
       "blocks": {
         "16434000324cd6f9bd-0": {
           "type": "heading",
@@ -37,7 +36,8 @@
         "full_width": true,
         "padding_top": 100,
         "padding_bottom": 100
-      }}
+      }
+    }
   },
   "order": [
     "main",

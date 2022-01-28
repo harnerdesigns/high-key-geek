@@ -16,23 +16,11 @@
             "text": "Give customers details about the banner image(s) or content on the template. More text, stretch this out fill the space.",
             "text_style": "body"
           }
-        },
-        "16433969590d32faa5-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/pages\/contact",
-            "button_style_secondary_1": true,
-            "button_label_2": "Sign Up",
-            "button_link_2": "\/account\/register",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "16433969590d32faa5-0",
-        "16433969590d32faa5-1",
-        "16433969590d32faa5-2"
+        "16433969590d32faa5-1"
       ],
       "settings": {
       }
