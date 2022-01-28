@@ -47,6 +47,14 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "e518f9b7-6ee3-4d16-875a-d1c868445b83": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/HighKeyGeek_Logo_Info_1.png",
+              "image_width": 200,
+              "alignment": "center"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -61,22 +69,23 @@
               "menu": "footer"
             }
           },
-          "footer-2": {
-            "type": "text",
+          "5b3e2a29-95cf-4580-b392-9317f88ba24a": {
+            "type": "link_list",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Quick links",
+              "menu": "footer"
             }
           }
         },
         "block_order": [
+          "e518f9b7-6ee3-4d16-875a-d1c868445b83",
           "footer-0",
           "footer-1",
-          "footer-2"
+          "5b3e2a29-95cf-4580-b392-9317f88ba24a"
         ],
         "settings": {
           "color_scheme": "background-1",
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
           "enable_country_selector": false,

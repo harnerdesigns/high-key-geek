@@ -24,7 +24,7 @@
             "button_link_1": "shopify:\/\/pages\/contact",
             "button_style_secondary_1": true,
             "button_label_2": "Sign Up",
-            "button_link_2": "shopify:\/\/blogs\/news",
+            "button_link_2": "\/account\/register",
             "button_style_secondary_2": false
           }
         }
