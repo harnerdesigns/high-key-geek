@@ -1,5 +1,14 @@
 /* Color custom properties */
 
+:root{
+  --purple: #640C3F;
+  --teal: #05A895;
+  --orange: #FB5A48;
+  --lightOrange: #FF914D;
+  --tan: #EFDEC6;
+  --black: #231F20;
+}
+
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
@@ -2150,8 +2159,7 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 0;
   }
 
   .header--has-menu:not(.header--middle-left) {
@@ -2173,9 +2181,9 @@ input[type='checkbox'] {
   }
 
   .header--top-center {
+    grid-template-columns: auto 4fr 1fr auto;
     grid-template-areas:
-      'left-icon heading icons'
-      'navigation navigation navigation';
+      'navigation heading search icons';
   }
 
   .header:not(.header--middle-left) .header__inline-menu {
@@ -2308,8 +2316,9 @@ menu-drawer + .header__search {
 }
 
 .header > .header__search {
-  grid-area: left-icon;
-  justify-self: start;
+  grid-area: search;
+  justify-self: end;
+  width: auto;
 }
 
 .header:not(.header--has-menu) * > .header__search {

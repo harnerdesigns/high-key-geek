@@ -1,0 +1,82 @@
+@import "mixins";
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: var(--tan) url("./wave.svg") bottom center no-repeat;
+    padding: 0 1rem 15vh;
+    background-size: 100vw 15vh;
+    @include breakpoint(laptop) {
+    background-size: 100vw 25vh;
+    padding: 0 10vw 15vh;
+        min-height: 90vh;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero__logo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .hero__logo-wrapper {
+        width: 100%;
+        height: 100%;
+
+        @include breakpoint(mobileonly) {
+            order: -1;
+        }
+    }
+
+    .hero {
+        &__content {
+        }
+
+        &__heading {
+            font-weight: 900;
+            text-align: center;
+            margin: 0;
+            @include breakpoint(laptop) {
+                text-align: right;
+                font-size: 6rem;
+            }
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            text-align: center;
+
+            @include breakpoint(laptop) {
+                margin-left: auto;
+                text-align: right;
+                font-size: 3rem;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            @include breakpoint(laptop) {
+                justify-content: flex-end;
+                font-size: 2rem;
+            }
+
+            .button{
+                font-weight: 900;
+                @include breakpoint(laptop) {
+                    font-size: 2rem;
+                }
+
+                &--secondary{
+                font-weight: 400;
+
+                    background: none;
+                }
+            }
+        }
+    }
+}
