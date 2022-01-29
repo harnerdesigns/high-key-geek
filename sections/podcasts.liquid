@@ -1,6 +1,7 @@
 {{ 'podcasts.css' | asset_url | stylesheet_tag }}
 
 <div id="Podcasts-{{ section.id }}" class="podcast-section">
+  <h2 class="section__title">Check Out Our Podcasts</h2>
   <div class="podcast__content">
     
       {%- for block in section.blocks -%}

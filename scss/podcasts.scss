@@ -12,11 +12,17 @@
         padding: 0 15vw 10vh;
     }
 
+    .section__title{
+        font-size: 4rem;
+        text-align: center;
+        font-weight: 900;
+    }
+
     .podcast__content {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         @include breakpoint(laptop) {
             grid-template-columns: 1fr 1fr;
@@ -30,6 +36,7 @@
         justify-content: center;
         flex-direction: row;
         text-decoration: none;
+        height: 100%;
 
         @include breakpoint(laptop) {
             flex-direction: column;
@@ -48,11 +55,12 @@
         justify-content: flex-start;
         flex-direction: column;
         width: 100%;
-        margin: 0 0 0 1rem;
+        margin: 0 0 0 auto;
+        padding-top: 1rem;
 
         @include breakpoint(laptop) {
             align-items: center;
-            margin: 1rem 0 0 0;
+            margin: auto 0;
             flex-direction: row;
             justify-content: space-between;
         }
@@ -63,6 +71,10 @@
         margin: 0;
         vertical-align: middle;
         text-align: left;
+    }
+
+    .podcast__subtitle{
+        text-align: right;
     }
 }
 
@@ -186,7 +198,7 @@
                 color: #fff;
             }
         }
-        &#OtherOne {
+        &#MoreSoon {
             background: transparent url("./wave--purple.svg") bottom center no-repeat;
             padding: 5vh 15vw;
             background-size: 100vw 5vh;
