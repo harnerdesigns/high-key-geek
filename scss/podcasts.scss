@@ -51,6 +51,9 @@
         max-width: 35%;
         height: auto;
         display: block;
+        @include breakpoint(laptop) {
+            max-width: 100%;
+        }
     }
 
     .podcast__meta {
