@@ -31,25 +31,25 @@
         "33a78853-9a6f-49db-a567-fa16e5af11bb": {
           "type": "podcast",
           "settings": {
-            "heading": "Podcast 1",
-            "subtitle": "Podcast Subtitle",
-            "image": "shopify:\/\/shop_images\/HighKeyGeek_Logo_Info_1.png",
-            "link": ""
+            "heading": "Conversational Commerce",
+            "subtitle": "Sponsored by Postscript.io",
+            "image": "shopify:\/\/shop_images\/ab67656300005f1f2c61c48310cb70634944567a.jpg",
+            "link": "\/pages\/podcasts#ConversationalCommerce"
           }
         },
-        "87056737-c443-475c-ae90-a87fcf2f1376": {
+        "23901e59-7135-48ff-b730-61cb2baec211": {
           "type": "podcast",
           "settings": {
-            "heading": "Podcast 2",
-            "subtitle": "Podcast Subtitle",
-            "image": "shopify:\/\/shop_images\/HighKeyGeek_Logo_Info_1.png",
-            "link": ""
+            "heading": "More Coming Soon",
+            "subtitle": "We Promise",
+            "image": "shopify:\/\/shop_images\/coming-soon.png",
+            "link": "\/pages\/podcasts#MoreSoon"
           }
         }
       },
       "block_order": [
         "33a78853-9a6f-49db-a567-fa16e5af11bb",
-        "87056737-c443-475c-ae90-a87fcf2f1376"
+        "23901e59-7135-48ff-b730-61cb2baec211"
       ],
       "settings": {
       }
