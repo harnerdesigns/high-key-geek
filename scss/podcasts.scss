@@ -16,6 +16,7 @@
         font-size: 4rem;
         text-align: center;
         font-weight: 900;
+        margin-top: 0;
     }
 
     .podcast__content {
@@ -37,6 +38,7 @@
         flex-direction: row;
         text-decoration: none;
         height: 100%;
+        width: 100%;
 
         @include breakpoint(laptop) {
             flex-direction: column;
@@ -46,7 +48,9 @@
     .podcast__logo {
         background: #fff;
         width: 100%;
+        max-width: 35%;
         height: auto;
+        display: block;
     }
 
     .podcast__meta {
@@ -56,10 +60,12 @@
         flex-direction: column;
         width: 100%;
         margin: 0 0 0 auto;
-        padding-top: 1rem;
+        padding: 0 0 0 1rem;
+
 
         @include breakpoint(laptop) {
-            align-items: center;
+        padding: 1rem 0 0;
+        align-items: center;
             margin: auto 0;
             flex-direction: row;
             justify-content: space-between;
@@ -74,7 +80,9 @@
     }
 
     .podcast__subtitle{
-        text-align: right;
+        @include breakpoint(laptop) {
+            text-align: right;
+        }
     }
 }
 
